@@ -1,25 +1,10 @@
 ## Teste Linux Com Token
 
-**Funfo**
-__Talvez__
+**JavaScript**
+__Começando Do Basico__
 
-![Teste de Gif](https://i.pinimg.com/originals/77/80/4e/77804eda54e8db8f167ad38d95cf632f.gif "Teste de Title")
+![JavaScript](https://i.pinimg.com/564x/71/ee/32/71ee32577432648f9e45fbd63b2cf261.jpg)
 
-~~~python
-print("Hello Word")
-~~~
-
-~~~javascript
-function hello(){
-    console.log("Hello Word")
-}
-~~~
-
-~~~html
-<p>
-    Hello Word
-</p>
-~~~
 
 
 
