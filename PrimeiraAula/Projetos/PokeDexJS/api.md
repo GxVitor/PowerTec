@@ -1,13 +1,3 @@
-## Conhecendo JavaScript
-
-#**JavaScript**
-
-__#Começando Do Basico__
-
-[__Projetos de Js Na Web__](https://github.com/GxVitor/PowerTec/tree/main/PrimeiraAula/Projetos/PokeDexJS)
-
-![JavaScript](https://i.pinimg.com/564x/71/ee/32/71ee32577432648f9e45fbd63b2cf261.jpg)
-
 # Api
 
 ## Requisição HTTP
@@ -77,10 +67,3 @@ https://www.sitequalquer.com/search?q=apple&category=fruits&page=1
 <div align="center">
 A query string é usada principalmente para enviar dados para um servidor da Web, que pode processá-los e retornar resultados relevantes para o cliente que fez a solicitação. Por exemplo, ao fazer uma pesquisa em um mecanismo de busca, a query string pode incluir o termo de pesquisa que o usuário digitou e outros parâmetros como a página atual ou o idioma desejado. O servidor da Web pode usar esses parâmetros para retornar uma lista de resultados relevantes que correspondem à consulta do usuário.
 </div>
-
-
-
-
-
-
-

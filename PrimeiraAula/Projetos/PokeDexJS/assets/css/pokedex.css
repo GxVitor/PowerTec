@@ -42,7 +42,7 @@
 }
 
 .pokemon .detail .type .type{
-    background-color: darksalmon;
+    background-color: rgb(165, 231, 126);
     color: white;
     padding: .25rem .5rem;
     margin: .25rem 0;
