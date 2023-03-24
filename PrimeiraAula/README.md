@@ -20,6 +20,7 @@ Endereço = dominio local onde o site de encontra
 Path = caminho sobre o diretorio do dominio
 
 ---
+<br>
 
 ## Request Method HTTP
 
@@ -78,7 +79,32 @@ https://www.sitequalquer.com/search?q=apple&category=fruits&page=1
 A query string é usada principalmente para enviar dados para um servidor da Web, que pode processá-los e retornar resultados relevantes para o cliente que fez a solicitação. Por exemplo, ao fazer uma pesquisa em um mecanismo de busca, a query string pode incluir o termo de pesquisa que o usuário digitou e outros parâmetros como a página atual ou o idioma desejado. O servidor da Web pode usar esses parâmetros para retornar uma lista de resultados relevantes que correspondem à consulta do usuário.
 </div>
 
+---
 
+<br>
+
+## Request Headers <img src="https://cdn-icons-png.flaticon.com/512/7065/7065322.png" width="50px">
+
+Request headers são informações adicionais que são enviadas juntamente com uma solicitação (request) HTTP. Essas informações geralmente incluem informações sobre o navegador do usuário, o tipo de conteúdo que o cliente (usuário) está solicitando, o tipo de codificação aceita pelo cliente e outras informações importantes que o servidor pode usar para determinar como processar a solicitação.
+
+Os cabeçalhos de solicitação (request headers) podem incluir informações como o tipo de navegador, idioma, tipo de conteúdo solicitado, autenticação, informações de cache e outras informações relacionadas à solicitação.
+
+Os cabeçalhos de solicitação são enviados no início da solicitação HTTP antes do corpo da solicitação (request body). O servidor da web usa essas informações para processar a solicitação e determinar a melhor maneira de responder ao cliente.
+
+Em Outras Palavras é a configuração da API.
+
+---
+<br>
+
+## Response Heahers <img src="https://cdn-icons-png.flaticon.com/512/6008/6008062.png" width="50px">
+
+Response headers são informações adicionais que são enviadas junto com a resposta (response) HTTP. Essas informações geralmente incluem informações sobre o servidor, o tipo de conteúdo que está sendo enviado, a codificação usada e outras informações importantes que o cliente (usuário) pode usar para processar a resposta.
+
+Os cabeçalhos de resposta (response headers) podem incluir informações como a data e hora em que a resposta foi enviada, o tipo de servidor da web que está sendo usado, o tipo de conteúdo que está sendo enviado, o status da resposta (como 200 OK, 404 Not Found, etc.), informações de cache e outras informações relacionadas à resposta.
+
+Os cabeçalhos de resposta são enviados no início da resposta HTTP antes do corpo da resposta (response body). O cliente da web usa essas informações para processar a resposta e determinar a melhor maneira de exibir ou utilizar o conteúdo recebido.
+
+Em Outras Palavras é a configuração da API.
 
 
 
