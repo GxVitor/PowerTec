@@ -106,6 +106,8 @@ Os cabeçalhos de resposta são enviados no início da resposta HTTP antes do co
 
 Em Outras Palavras é a configuração da API.
 
+SamukGay
+
 
 
 
