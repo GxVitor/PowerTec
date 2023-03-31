@@ -8,7 +8,7 @@ __#Começando Do Basico__
 
 ![JavaScript](https://i.pinimg.com/564x/71/ee/32/71ee32577432648f9e45fbd63b2cf261.jpg)
 
-# Api
+
 
 ## Requisição HTTP
 
@@ -80,6 +80,13 @@ A query string é usada principalmente para enviar dados para um servidor da Web
 </div>
 
 ---
+## Protocolo HTTP <img src="https://cdn-icons-png.flaticon.com/512/7799/7799128.png" width="45px">
+
+O protocolo HTTP (Hypertext Transfer Protocol) é um protocolo de comunicação utilizado na internet para transferir informações, como páginas web, entre servidores e clientes.
+
+Quando um cliente envia uma solicitação para um servidor, o servidor responde com uma mensagem de retorno que contém um código de status e possivelmente outras informações, como cabeçalhos e corpo da mensagem.
+
+---
 
 <br>
 
@@ -106,9 +113,52 @@ Os cabeçalhos de resposta são enviados no início da resposta HTTP antes do co
 
 Em Outras Palavras é a configuração da API.
 
-SamukGay
+---
 
+<br>
 
+## Body HTTP <img src="https://cdn-icons-png.flaticon.com/512/2491/2491377.png" width="45px">
 
+No HTTP, o "body" refere-se ao conteúdo real da mensagem enviada em uma solicitação (request) ou resposta (response). Em outras palavras, é o conteúdo que está sendo transmitido através da rede.
 
+Em solicitações HTTP, o corpo (body) pode conter informações adicionais que o cliente (usuário) está enviando ao servidor, como dados de formulário, conteúdo de arquivo ou JSON. Em respostas HTTP, o corpo (body) pode conter o conteúdo solicitado pelo cliente, como um arquivo ou uma página da web.
+
+Alguns dos métodos HTTP que geralmente exigem um corpo (body) na solicitação incluem:
+
+ - POST: usado para enviar dados do formulário ou informações de upload de arquivos
+ - PUT: usado para enviar um arquivo ou atualizar informações existentes
+ - PATCH: usado para fazer atualizações parciais em informações existentes
+ - DELETE: usado para enviar informações adicionais para ajudar a identificar o recurso a ser excluído.
+
+Outros métodos HTTP, como GET e HEAD, geralmente não têm um corpo (body) na solicitação, mas podem incluir um corpo (body) na resposta.
+
+---
+
+<br>
+
+## Status Code <img src="https://cdn-icons-png.flaticon.com/512/5867/5867377.png" width="50px">
+
+Status code (código de status) é um código numérico de três dígitos que é enviado pelo servidor em uma resposta HTTP para indicar o status da solicitação do cliente. O status code é uma parte fundamental do protocolo HTTP e é usado para informar ao cliente (usuário) o resultado da sua solicitação.
+
+Os códigos de status HTTP são divididos em cinco classes:
+
+ - 1(Informação): Indica que a solicitação foi recebida e o servidor está processando-a.
+
+ - 2 (Sucesso): Indica que a solicitação foi recebida, compreendida e aceita com sucesso.
+
+- 3 (Redirecionamento): Indica que a solicitação precisou ser redirecionada ou modificada para ser concluída com sucesso.
+
+- 4 (Erro do Cliente): Indica que a solicitação enviada pelo cliente contém algum erro ou que o recurso solicitado não existe ou não está disponível.
+
+- 5 (Erro do Servidor): Indica que o servidor encontrou algum problema ao processar a solicitação.
+
+Alguns exemplos de códigos de status HTTP incluem:
+
+ - 200 OK: Indica que a solicitação foi bem sucedida e o servidor está retornando o conteúdo solicitado.
+ - 404 Not Found: Indica que o servidor não conseguiu encontrar o recurso solicitado.
+ - 500 Internal Server Error: Indica que ocorreu um erro no servidor ao processar a solicitação.
+
+Os códigos de status HTTP são úteis para os desenvolvedores entenderem o resultado das solicitações que estão sendo feitas e para fornecer informações claras aos usuários caso algo dê errado durante a interação com uma aplicação web ou site.
+
+---
 
