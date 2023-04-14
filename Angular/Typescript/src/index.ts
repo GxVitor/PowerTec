@@ -19,4 +19,14 @@
 //void
 
     let qualquercoisa: any = "tudo, 90, boolean, number";
-    let vaziu:void
+    let vaziu:void;
+
+
+
+//objeto
+
+let produto:object = {
+    name:"Vitor",
+    cidade:"Sp",
+    idade: 20,
+};
