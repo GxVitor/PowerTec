@@ -43,7 +43,11 @@ player2.defed(player2, player1)
 //subClass
 //Magician: subClass
 class Magician extends Character{
-    constructor(name: string ,stregth: number ,skill: number)){
-        super(name,stregth,skill)
+    magicPoints: number;
+    constructor(name: string ,stregth: number ,skill: number, magicPoints: number){
+        super(name,stregth,skill);
+        this.magicPoints = magicPoints;
     }
 }
+
+const Mago = new Magician("Vitor", 10, 100, 200);

@@ -24,3 +24,19 @@ const player2 = new Character("João", 19, 100);
 console.log(player2);
 player1.defed(player1, player2);
 player2.defed(player2, player1);
+// data modifiers
+/*
+    public = poder ser alterado fora da classe com player1.name = "Luiz"
+    private = somente no contructor pode mexer, depois da class formata não pode ser accesada fora da class
+    protected = somente outra class ou subClass pode alterar
+*/
+//Character: superClass
+//subClass
+//Magician: subClass
+class Magician extends Character {
+    constructor(name, stregth, skill, magicPoints) {
+        super(name, stregth, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+const Mago = new Magician("Vitor", 10, 100, 200);

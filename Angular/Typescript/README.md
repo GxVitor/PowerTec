@@ -84,3 +84,13 @@ npx tsc --init
 ~~~
 
 *logo depois de executar esse comando no seu projeto irar criar um arquivo chamado **tsconfig.json**, nesse aquivo json contem as configuração do Seu Ts onde vc poderar alterar a pasta raiz do seu projeto Ts, ou a onde os projetos que serão compilador iram ir, entrer outrar configuração que vc pode mudar*
+
+___
+## Criando Um Servidor Local para TypeScript
+
+*Com o Comando*
+~~~
+npm install ts-node-dev -D
+~~~
+
+*Com Esse comando você vai criar um servidor local onde ele não vai criar um build em Js*
