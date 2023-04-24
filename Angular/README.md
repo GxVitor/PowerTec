@@ -25,7 +25,7 @@
 
 ## AngularJs != Angular
 
-Existem o Angular e o AngularJs, os dois são Framework, o AngularJS é mais antigo e com foco no JavaScript, e o Angular no TypeScript
+Existem o Angular e o AngularJs, os dois são Framework, o AngularJS é mais antigo e com foco no JavaScript, e o Angular no TypeScript.
 
 
 
