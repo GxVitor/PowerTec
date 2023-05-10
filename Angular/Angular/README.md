@@ -43,7 +43,7 @@ De o comando ng help, se aparecer um list de comandos Tudo Certo, caso ou contra
  ~~~powershell
 Get-ExecutionPolicy CurrentUser
  ~~~
- 
+
  Se Estiver <strong> Restricted </strong> Não tem permição para Executar Scripts na Maquina, para resolver a gente vai Desistalar o Angular com o Comando:
  ~~~cmd
 npm uninstall -g @angular/cli
@@ -65,4 +65,73 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ~~~
 E logo Em Seguida Você Digita A e dar Enter. E ponto pode Install o Angular com as Permições.
 
+---
 
+## Criando um Porjeto em Angular
+
+Vai no diretorio que deseja criar o projeto e no terminal executer o comando
+
+~~~cmd
+ng new (nome-do-projeto)
+~~~
+
+Ele irar criar um pasta com o nome que foi dado para o projeto e dentra da pasta tera tudo que o angular precisar para começar a funcionar 
+
+---
+
+## Iniciando Serve Angular
+
+Para pode ver as alterações em tempo de execução vamos ter que iniciar um Angular Serve, isso é facil o proprio ng faz isso para nós basta ir na pasta raiz do projeto e Executar o comando no terminal
+~~~cmd
+ng serve
+~~~
+
+Com esse commando você vai pode visualizar o seu projeto em Run Time ou em tempo de execução então toda alteração feita no code ele altera na visualização pelo browser, apos executar o comando ser for a primeira vez ele pode demorar um pouco, e vai perguntar algumas coisa no seu terminal.
+
+---
+
+## Ng generate
+
+o ng generate pode gerar ou modificar algumas pasta do projeto mais vamos usar para gerar um comenent no angular é muito mais rapido e facil criar um component pelo <strong>ng</strong> para criar um component com o ng basta executar o comando
+~~~cmd
+ng generate component (Nome_Do_Component)
+~~~
+apos executar esse comando ele vai criar um pasta com o nome do component com o html,css,ts,spec, e vai adicionar o seu component no module de forma automatica facilitanto assim a criação de component.
+
+A generate pode criar outros tipos de schematic tbm como
+  - app-shell
+  - application
+  - class
+  - config
+  - directive
+  - enum
+  - environments
+  - guard
+  
+Entre outras para poder ver tudo oque o generate pode criar ou modificar voce pode dar o comando
+~~~cmd
+ng generate --help
+~~~
+para obter mais informações sobre o generate.
+
+---
+
+## Life Cycle Hooks ou Hooks
+- ngOnInit()
+  - assim que o Component for chamado ele ativo o OnInit e executar o codigo dentro dele
+
+  <br>
+- ngOnChanges()
+  - esse evento é chamando assim que alguma propriedade de entrada do component é alterada 
+
+  <br>
+- ngDoCheck()
+  - Dentro do DoCheck Existem alguns SubEvento como:
+    - ngAfterContentInit()
+    - ngAfterContentChecked()
+    - ngAfterViewInit()
+    - ngAfterViewChecked()
+    
+  <br>
+- ngOnDestroy()
+  - é chamado quando o component é destruido
