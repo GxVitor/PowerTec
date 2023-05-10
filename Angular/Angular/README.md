@@ -20,7 +20,6 @@
   - NODE & NPM
   - JavaScript & Typescript
   - (VsCode) extenção Angular Language Service
-  - npm install -g @angular/cli
 ---
 
 
@@ -30,6 +29,40 @@ Existem o Angular e o AngularJs, os dois são Framework, o AngularJS é mais ant
 
 ---
 
-## Criando Projeto-Angular
+## Installando Angular
+
+~~~cmd
+npm install -g @angular/cli
+~~~
+
+### Em Caso de Erro
+<br>
+De o comando ng help, se aparecer um list de comandos Tudo Certo, caso ou contrario Aparecer um texto em Amarelo sua maquina não estar permitindo Script do Angular, Para
+ Verificar Se a Execução de Scripts esta ativa na sua maquina. No Window Você tera que ir no PowerShell como Administrador e executar o Comando:
+
+ ~~~powershell
+Get-ExecutionPolicy CurrentUser
+ ~~~
+ 
+ Se Estiver <strong> Restricted </strong> Não tem permição para Executar Scripts na Maquina, para resolver a gente vai Desistalar o Angular com o Comando:
+ ~~~cmd
+npm uninstall -g @angular/cli
+ ~~~
+
+ Agora vamos limpar o cache do npm para não ficar nada que possar dar confrito, para limpar o cache com o Comando:
+ ~~~cmd
+npm cache clean --force
+ ~~~
+ Para verificar se o cache foi limpo utilizar desse Comando:
+ ~~~cmd
+npm cache verify
+ ~~~
+
+Agora para ativar a utilização dos Scripts na maquina com o Comando:
+
+~~~powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+~~~
+E logo Em Seguida Você Digita A e dar Enter. E ponto pode Install o Angular com as Permições.
 
 
