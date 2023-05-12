@@ -131,7 +131,11 @@ para obter mais informações sobre o generate.
     - ngAfterContentChecked()
     - ngAfterViewInit()
     - ngAfterViewChecked()
-    
+
   <br>
 - ngOnDestroy()
-  - é chamado quando o component é destruido
+  - é chamado quando o component é destruido.
+
+---
+
+
