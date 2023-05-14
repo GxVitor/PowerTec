@@ -138,4 +138,22 @@ para obter mais informações sobre o generate.
 
 ---
 
+## Diretivas
+Diretiva são uma maneira como o Angular Manipula e altera a DOM dinâmicamente
+
+## Diretivas de Atributo
+Alteram a aparência do comportamento ded um elemento, componente ou outra Diretiva
+ - NgClass - Adiciona ou remove conjunto de classes CSS
+ - NgStyle - Adiciona ou remove um conjuto de estilos ao HTML
+ - NgModel - Adiciona vinculação de dados bidirecional a um elemento de um formulário
+ - NgModel - Faz a comunicação do HTML com o TypeScript
+ - NgTemplate - Permite Criar um conjunto de elemento e só vai aparecer na tela se a condição dele for TRUE
+ - NgContent - consegue puxar elemento de um content pai
+
+## Diretivas Estruturais
+Moldam ou remodelam a estrutura da DOM, adicionando ou removendo elementos na tela
+ - NgIf - Condicional que verifica se modelo deve ser visualizado ou não
+ - NgFor - repete um elemento para cada item em uma lista
+ - NgSwitch - Utilizado para alterar entre comportamentos alternativos
+
 
