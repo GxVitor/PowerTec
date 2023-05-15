@@ -1,6 +1,11 @@
+<div style="display: flex" align="center">
 <img src="https://i.pinimg.com/564x/10/15/6c/10156cf764aff7461376829bd968b86a.jpg">
+</div>
+<div style="display: flex" align="center">
 
 ## Mexendo Com Angular, Component e TypeScript
+</div>
+
 
 <br>
 
@@ -24,5 +29,7 @@ nesse Repositorio é criado uma Shadow DOM com o JavaScript
 <div style="display: flex" align="center">
 <h1 align="center">Bom Estudos</h1>
 </div>
+<div style="display: flex" align="center">
 <img src="https://i.pinimg.com/564x/a9/0c/95/a90c953839739ed12b74a07fe48e8cfd.jpg" align="center">
+<div>
 
