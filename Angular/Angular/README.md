@@ -156,4 +156,13 @@ Moldam ou remodelam a estrutura da DOM, adicionando ou removendo elementos na te
  - NgFor - repete um elemento para cada item em uma lista
  - NgSwitch - Utilizado para alterar entre comportamentos alternativos
 
+## NgModule
 
+Gerando um Module
+~~~cmd
+ng generate module [nomeDoMudulo]
+  ou
+ng g m [nomeDoMudulo]
+~~~
+
+Para importa um module para outro só dar exports:[component] dentro do ngModule

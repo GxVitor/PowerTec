@@ -11,7 +11,7 @@ export class CompAtributosComponent implements OnInit{
   corFundo: string = "red";
   item: string = ""
   lista: string[] = []
-  isEnableBlock: boolean = true
+  isEnableBlock: boolean = true;
 
   constructor(){}
 
