@@ -1,0 +1,64 @@
+.container-fundo{
+
+    background-image: url("https://i.pinimg.com/564x/a7/9c/dd/a79cdd6808687ef0ef59ed13baf2d97b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container-fundo{
+    color: white;
+    text-align: left;
+    padding: 50px;
+}
+
+.card{
+    margin-bottom: 10px;
+    text-align: left;
+    width: 60%;
+    border-radius: 2rem;
+    
+}
+
+.card > h1{
+    font-size: 80px;   
+}
+
+.card p, h1, button{
+    margin: 10px;
+    
+}
+.card > p{
+    width: 65%;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: all .5s ease;
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+
+
