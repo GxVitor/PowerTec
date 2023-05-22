@@ -1,0 +1,27 @@
+.menu-main{
+    position: absolute;
+    z-index: 5;
+    left: 75%;
+}
+.fundo{
+    position: absolute;
+    z-index: 4;
+}
+
+.topo{
+    width: auto;
+    height: auto;
+}
+
+.corpo{
+    width: 90%;
+    height: 90%;
+    margin-top: 350px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    padding: 20px;
+}

@@ -1,0 +1,39 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.alphacoders.com/213/213443.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+
+.container{
+    
+    width: 99.6%;
+    height: 99.6%;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.content_cover > img{
+    border:  5px solid rgb(100, 98, 98);
+    border-radius: 20px;
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+    box-shadow: -44px 15px 61px -2px rgba(0,0,0,0.75);
+}
+.content_description{
+    margin: 15px;
+}
+
+.content_description > p {
+    color: white;
+    font-size: 20px;
+}

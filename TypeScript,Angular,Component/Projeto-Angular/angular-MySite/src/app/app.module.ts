@@ -7,6 +7,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CardComponent } from './components/card/card.component';
 import { FundoComponent } from './components/fundo/fundo.component';
 import { ConteudoComponent } from './components/conteudo/conteudo.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContentComponent } from './pages/content/content.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { ConteudoComponent } from './components/conteudo/conteudo.component';
     MenuComponent,
     CardComponent,
     FundoComponent,
-    ConteudoComponent
+    ConteudoComponent,
+    HomeComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

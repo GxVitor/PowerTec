@@ -1,1 +1,49 @@
-<p>menu works!</p>
+
+    <ul class="menu" (click)="clickMenu()"> 
+        
+        <div class="toggle">
+            <fa-icon [icon]="faPlus"></fa-icon>
+        </div>
+        <li style="--i:0" class="active">
+            <a href="https://www.linkedin.com/in/gxvitor-gabriel-6aa48824a/">
+                <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:1">
+            <a href="https://www.instagram.com/gxvitorsk8/?next=%2F">
+                <fa-icon [icon]="faInstagram"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:2">
+            <a href="">
+                <fa-icon [icon]="faWhatsapp"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:3">
+            <a href="https://github.com/GxVitor">
+                <fa-icon [icon]="faGithubAlt"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:4">
+            <a href="#">
+                <fa-icon [icon]="faEnvelope"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:5">
+            <a href="#">
+                <fa-icon [icon]="faGear"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:6">
+            <a href="#">
+                <fa-icon [icon]="faUser"></fa-icon>
+            </a>
+        </li>
+        <li style="--i:7">
+            <a href="#">
+                <fa-icon [icon]="faHouse"></fa-icon>
+            </a>
+        </li>
+
+        <div class="indicator"></div>
+    </ul>   
