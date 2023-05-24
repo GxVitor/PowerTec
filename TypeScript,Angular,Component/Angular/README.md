@@ -166,3 +166,123 @@ ng g m [nomeDoMudulo]
 ~~~
 
 Para importa um module para outro só dar exports:[component] dentro do ngModule
+
+## Routes com Angular
+
+O Arquivo para configurar o router é App-routing.module.ts
+
+nele vai ter um importe Routes que vai ser um tipo definito na varivel logo abaixo, e vai receber um Array
+
+e logo depois vai imports o tipo do router
+e exports o router para pode ser usado em outra partes do projeto.
+
+<br>
+
+## Configurando Objetos de Rotas
+
+No Array do Tipo Routes no Arquivo App-routing.module.ts vamos passar um Array de objetos passando o Path:'como vai ficar na url' o Component: Nelecionar o componenet, e vc pode passar outro parametro que é o pathMatch:'full' or 'prefix' como padrão ele vem com o prefix, a diferença entre o full e prefix é que o full tem que ter exatamento isso o path para ele achar o caminho já o prefix não, ent no seu coigo ficara assim
+
+~~~ng
+const routes: Routes = [
+  {path:'', component: Componenet, pathMatch:'full'},
+  {path:'123', component: Component, pathMatch:'prefix'}
+];
+~~~
+Se o path não tiver nada ele vai jogar para um Component que vc definer, agr já se Endereço/123 ele irar ir para outro component.
+
+### Rota Coringa
+
+Na Rota coringa tudo que o usúario digitar e não ser um rota que vc definiu vai jogar sempre para um caminho especifico para fazer isso só criar mais um objeto dentro no routes desse jeito
+
+~~~ng
+{path:"**" redirectTo:""}
+~~~
+
+o Path:"**" vai pegar tudo que não tenho um caminho no paths, e vai jogar para o redirectTo:"", dentro do redirectTo você vai passar uma String indicanto em que path o usúaria sera redirecionado 
+
+## Usando o RouterLInk para navegar entre páginas
+
+Para usar o Router Link vai vai trocar no seu HTML a tag href="" por um router link.
+
+~~~html
+<a href="/portifolio"></a>
+trocar por 
+<a [routerLink]="['/portifolio']">Portifolio</a>
+~~~
+dentro do Routerlink vc vai colocar o path que vc configuro no App-routing
+
+## Router Link com classe
+
+com o routerLinkActive você pode passar um class de css para a rota em que se encontra o site
+~~~ng
+[routerLinkActive]="['ClassDoCss']"
+~~~
+E para pegar exatamente a rota, tudo igual vc pode usar o routerLinkActiveOptions
+
+~~~ng
+[routerLinkActiveOptions]="{exact: true}
+~~~
+quando a rota for exatamente igual vai atribuir a class no elemento
+
+## Rotas com parâmetros
+
+Dentro do Path vc vai colocar um /:nomeDoParemetro por exemplo
+~~~ng
+{path:'portifolio/:id', component: CardComponent, pathMatch:'prefix'},
+~~~
+
+nesse exemplo estou passando o parametro id agora para pode dar um get nesse parametro a gente vai no component que esta no path no caso acima esta no CardComponent, e dentro do metodo contrudor fazer criar um varivel do tipo ActivatedRoute e vamos puxar os parametros dele como no exemplo abaixo
+
+~~~ng
+constructor(private activeRoute: ActivatedRoute){
+    this.activeRoute.params.subscribe(
+      res => console.log(res)
+    )
+  }
+~~~
+Nesse coigo ele estar resgantando o parametro e printando no console.
+
+### QueryParams de rotas 
+
+Dentro do contructor vc vai chamar o nome que vc deu para o activeRoute e puxar com o queryParams
+Por Exemplo:
+~~~ng
+this.activeRoute.queryParams.subscribe(
+      res => console.log(res)
+    )
+~~~
+
+ele vai puxar o meu QueryParams e vai printar no console 
+
+## Redirecionamento por Component
+
+Dentro do Componenet no metodo contrudor vai chamar um tipo de dado Router
+
+~~~ng
+private navegador: Router
+~~~
+
+para navegar é só chamar o nome do que vc deu para o tipo Router e colocar .navigata(['path'])
+
+Exemplo:
+~~~ng
+this.navegador.navigate(['/'])
+~~~
+
+## Rotas Children
+
+Dentro do App-Routing pode fazer um Path dentro de outro path como nos exemplos acima o path portifolio não existem mais sem o id podemos fazer assim
+
+~~~ng
+{path:'portifolio', component: CardComponent , children:[
+    {path:':id', component: CardComponent},
+  ]},
+~~~
+
+puxar os params de rota filho
+
+~~~ng
+this.activeRoute.firstChild?.params.subscribe(
+      res => console.log(res)
+    )
+~~~
